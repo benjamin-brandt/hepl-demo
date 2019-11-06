@@ -1,8 +1,6 @@
 package be.hepl.demo;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,5 +16,6 @@ public class Cat {
     private Integer id;
     private String color;
     private String name;
+    private String eyeColor;
 
 }

@@ -12,14 +12,14 @@ public class CatController {
     }
 
     @GetMapping(path="/all")
-    public @ResponseBody Iterable<Cat> getAllUsers() {
+    public @ResponseBody Iterable<Cat> getAllCats() {
         return catRepository.findAll();
     }
 
 
     @PostMapping(path="/add")
     public @ResponseBody
-    String addNewUser (@RequestParam String name
+    String addNewCat (@RequestParam String name
             , @RequestParam String color) {
 
         Cat c = new Cat();

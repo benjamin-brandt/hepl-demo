@@ -20,7 +20,7 @@ public class CatController {
     @PostMapping(path="/add")
     public @ResponseBody
     String addNewCat (@RequestParam String name
-            , @RequestParam String color) {
+                    , @RequestParam String color) {
 
         Cat c = new Cat();
         c.setName(name);

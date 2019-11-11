@@ -7,5 +7,6 @@ import java.util.Set;
 public interface CatRepository extends CrudRepository<Cat, Integer> {
 
     Set<Cat> findCatByName(String name);
+    Set<Cat> findByEyeColor(String eyeColor);
 
 }

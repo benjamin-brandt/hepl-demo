@@ -17,5 +17,6 @@ public class Cat {
     private String color;
     private String name;
     private String eyeColor;
+    private String lastName;
 
 }
